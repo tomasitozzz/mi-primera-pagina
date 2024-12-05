@@ -1,0 +1,96 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Precios usando Flex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .pricing-card {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .plan {
+            flex: 1;
+            padding: 20px;
+            margin: 0 10px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .plan:hover {
+            transform: scale(1.05);
+        }
+        .plan h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .plan p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .plan button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .plan button:hover {
+            background-color: #0056b3;
+        }
+        .most-popular {
+            border: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-card">
+        <div class="plan">
+            <h2>Starter</h2>
+            <p>$49</p>
+            <p>No setup fee</p>
+            <p>Unlimited products</p>
+            <p>Mobile storefront</p>
+            <p>Mobile app</p>
+            <button>Get Started</button>
+        </div>
+        <div class="plan most-popular">
+            <h2>Personal</h2>
+            <p>$99</p>
+            <p>No setup fee</p>
+            <p>Unlimited products</p>
+            <p>Mobile storefront</p>
+            <p>Mobile app</p>
+            <button>Get Started</button>
+        </div>
+        <div class="plan">
+            <h2>Team</h2>
+            <p>$229</p>
+            <p>No setup fee</p>
+            <p>Unlimited products</p>
+            <p>Mobile storefront</p>
+            <p>Mobile app</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+</body>
+</html>
+
